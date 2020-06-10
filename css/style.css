@@ -222,11 +222,11 @@ button #current:hover:before, button:hover:after {
 	.footA div{
 		flex: 1;
 	}
-	footA div: not{
+	.footA div:not{
 		margin-left: 40px;
 	}
 }
-btn{
+.btn{
     color:#454545;
     position:relative;
     margin:1em;display:inline-block;
@@ -237,7 +237,7 @@ btn{
     font-weight:bold;
 }
 
-btn:hover{
+.btn:hover{
     color:#a18ae6;
 }
 .line1{
