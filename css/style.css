@@ -7,54 +7,43 @@ https://codepen.io/deineko/pen/jrmmoQ
 /*初期設定
 ----------------------------------------------*/
 body {
-	margin: 0;
+  margin: 0;
+  width: 100%;
 }
 .container {
-	margin: 0 auto;
+	margin: 0;
 	padding: 0 16px;
 	max-width: 800px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1em;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  width: 100%;
 }
 
 /* ヘッダー
 ---------------------------------------------------- */
 .header-inner {
-	padding: 2px;
+  padding: 2px;
+  width: 100%;
 }
-.headA{
-	display:inline-block;
+.headA *{
+  display: block;
 	padding-top: 0;
-    padding: 10px 10px 80px 10px;
+  padding: 10px 10px 10px 10px;
 }
-.headB{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 40vh;
-	background-image: url(images/mainvisualonly.png);
-	background-position: left;
-	background-size: cover;
+.headA img{
+  min-width: 200px;
+  max-width: 200px;
 }
-.headB h1{
-	color:#fff;
-	text-shadow: 1px 1px 4px black;
-	text-align: center;
-	margin-top:0;
-	margin-bottom:10px;
-	font-size:10vw;
+.header-inner img{
+  width: 100%;
 }
 #logo{
-	margin: 50px 0;
-    
+	margin: 50px 0;  
 }
-@media only screen and (min-width: 768px){
-	.headB h1{
-		font-size:76px;
-	}
+#mainvisual img{
+  width: 100%;
 }
 /* メイン
 ---------------------------------------------------- */
@@ -85,7 +74,9 @@ body {
 	color: #000;
 }
 .navbar{
-	list-style: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 .navbar a{
 	display: block;
@@ -97,7 +88,7 @@ body {
 }
 .navbar #current a{
 }
-@media only screen and (min-width:768px){
+@media screen and (min-width:768px){
 	.navbar{
 		display:flex;
 	}
@@ -107,39 +98,39 @@ body {
 /* ボタン
 ---------------------------------------------------- */
 button {
-    color:#454545;
-    background:transparent;
-    border-width:2px;
-    border-style: solid;
-    border-color: #454545;
-    position:relative;
-    margin:1em;display:inline-block;
-    padding:0.5em 1em;
-    transition:all 0.3s ease-in-out;
-    text-align:center;
-    font-family:comfortaa;
-    font-weight:bold
+  color:#454545;
+  background:transparent;
+  border-width:2px;
+  border-style: solid;
+  border-color: #454545;
+  position:relative;
+  margin:1em;display:inline-block;
+  padding:0.5em 1em;
+  transition:all 0.3s ease-in-out;
+  text-align:center;
+  font-family:comfortaa;
+  font-weight:bold
 }
 button:before, button:after {
-    content:'';
-    display:block;position:absolute;
-    border-color:#454545;
-    box-sizing:border-box;
-    border-style:solid;
-    width:1em;height:1em;
-    transition:all 0.3s ease-in-out
+  content:'';
+  display:block;position:absolute;
+  border-color:#454545;
+  box-sizing:border-box;
+  border-style:solid;
+  width:1em;height:1em;
+  transition:all 0.3s ease-in-out
 }
 button:before {
     top:-6px;left:-6px;border-width:2px 0 0 2px;z-index:5;}
 button:after {
     bottom:-6px;right:-6px;border-width:0 2px 2px 0;}
 button:hover:before, button:hover:after {
-    width:calc(100% + 12px);
-    height:calc(100% + 12px);border-color:#fff}
+  width:calc(100% + 12px);
+  height:calc(100% + 12px);border-color:#fff}
 .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
 .pink button {
-    color:#e99;
-    border-color:#e99
+  color:#e99;
+  border-color:#e99
 }
 .pink button:before, .pink button:after  {border-color:#e99}
 .pink button:hover:before, .pink button:hover:after {border-color:#a18ae6;}
@@ -149,27 +140,27 @@ button:hover:before, button:hover:after {
 /*ボタン　カレント
 ---------------------------------*/
 .panel  #current{
-    color:#a18ae6;
-    background:transparent;
-    border-width:2px;
-    border-style: solid;
-    border-color: #a18ae6;
-    position:relative;
-    margin:1em;display:inline-block;
-    padding:0.5em 1em;
-    transition:all 0.3s ease-in-out;
-    text-align:center;
-    font-family:comfortaa;
-    font-weight:bold
+  color:#a18ae6;
+  background:transparent;
+  border-width:2px;
+  border-style: solid;
+  border-color: #a18ae6;
+  position:relative;
+  margin:1em;display:inline-block;
+  padding:0.5em 1em;
+  transition:all 0.3s ease-in-out;
+  text-align:center;
+  font-family:comfortaa;
+  font-weight:bold
 }
 button #current:before, button #current:after {
-    content:'';
-    display:block;position:absolute;
-    border-color:#a18ae6;
-    box-sizing:border-box;
-    border-style:solid;
-    width:1em;height:1em;
-    transition:all 0.3s ease-in-out
+  content:'';
+  display:block;position:absolute;
+  border-color:#a18ae6;
+  box-sizing:border-box;
+  border-style:solid;
+  width:1em;height:1em;
+  transition:all 0.3s ease-in-out
 }
 button #current:before {
     top:-6px;left:-6px;border-width:2px 0 0 2px;z-index:5;}
@@ -199,7 +190,7 @@ button #current:hover:before, button:hover:after {
 .footA ul{
 	font-size: 14px;
 	list-style: none;
-    list-style-position: inside;
+  list-style-position: inside;
 }
 .footA a{
 	display: block;
@@ -215,7 +206,7 @@ button #current:hover:before, button:hover:after {
 	text-align: center;
 	color: #666;
 }
-@media only screen and (min-width:768px){
+@media screen and (min-width:768px){
 	.footA{
 		display:flex;
 	}
@@ -226,15 +217,16 @@ button #current:hover:before, button:hover:after {
 		margin-left: 40px;
 	}
 }
+
 .btn{
-    color:#454545;
-    position:relative;
-    margin:1em;display:inline-block;
-    padding:0.1em 1.75em;
-    transition:all 0.3s ease-in-out;
-    text-align:center;
-    font-family:comfortaa;
-    font-weight:bold;
+  color:#454545;
+  position:relative;
+  margin:1em;display:inline-block;
+  padding:0.1em 1.75em;
+  transition:all 0.3s ease-in-out;
+  text-align:center;
+  font-family:comfortaa;
+  font-weight:bold;
 }
 
 .btn:hover{
@@ -255,5 +247,3 @@ button #current:hover:before, button:hover:after {
 .main-inner h3{
     background: liner-gradient(transparent 70%,#ff99ab);
 }
-/*tabling
-------------------------------------*/
