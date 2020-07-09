@@ -1,0 +1,22 @@
+﻿@charset "utf-8";
+header, main, footer{
+  min-width: 375px;
+  font-family: 'TsukuARdGothic-Regular','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+/* メイン
+---------------------------------------------------- */
+.img-work{
+  width: 200px;
+  padding: -2rem;
+  border: #e7e6e6 solid .5px;
+  border-radius: 3px;
+}
+
+/* navgation
+---------------------------------------------------- */
+.navbar img{
+  max-width: 200px;
+}
+.table a{
+	color: palevioletred;
+}
