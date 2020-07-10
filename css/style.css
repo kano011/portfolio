@@ -6,10 +6,9 @@ header, main, footer{
 /* メイン
 ---------------------------------------------------- */
 .img-work{
-  width: 200px;
-  padding: -2rem;
-  border: #e7e6e6 solid .5px;
-  border-radius: 3px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-clip: content-box;
 }
 
 /* navgation
@@ -21,9 +20,18 @@ header, main, footer{
 .navbar img{
   max-width: 200px;
 }
+.navbar-light .navbar-toggler{
+  border: none;
+}
+@media screen and (max-width:767px){
+  .nav-link{
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    padding-bottom: .25rem;
+    margin-bottom: .25rem;
+  }
+}
 .mainvisual{
   padding-top: 70px;
 }
-.table a{
-	color: palevioletred;
-}
+.fc-palevioletred{color: palevioletred;}
+.fc-palevioletred:hover{color: rgb(202, 4, 70);text-decoration: none;}
