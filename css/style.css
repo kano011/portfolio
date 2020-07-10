@@ -14,8 +14,15 @@ header, main, footer{
 
 /* navgation
 ---------------------------------------------------- */
+.navbar{
+  position: fixed;
+  z-index: 10;
+}
 .navbar img{
   max-width: 200px;
+}
+.mainvisual{
+  padding-top: 70px;
 }
 .table a{
 	color: palevioletred;
