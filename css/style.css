@@ -10,6 +10,7 @@ header, main, footer{
   margin-bottom: 15px;
   background-clip: content-box;
 }
+a{text-decoration: none;}
 
 /* navgation
 ---------------------------------------------------- */
@@ -33,5 +34,11 @@ header, main, footer{
 .mainvisual{
   padding-top: 70px;
 }
-.fc-palevioletred{color: palevioletred;}
+.fc-palevioletred{color: #d87093;}
 .fc-palevioletred:hover{color: rgb(202, 4, 70);text-decoration: none;}
+
+/*  p5js
+-------------------------------------------------- */
+#p5js{
+  margin: 0;
+}
