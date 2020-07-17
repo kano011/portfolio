@@ -6,7 +6,11 @@ for (let i = 0; i < num; i++) {
   ty1[i] = new Array(num).fill(0);
 }
 function setup() {
-  let canvas = createCanvas(innerWidth, innerHeight);
+  let wid = innerWidth;
+  if(wid > 1000){
+    wid = 1000;
+  }
+  let canvas = createCanvas(wid, innerHeight);
   canvas.parent('canvas');
   //colorMode(HSB,360,100,100,1);
   background(60);
