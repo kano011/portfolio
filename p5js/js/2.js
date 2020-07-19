@@ -33,6 +33,9 @@ function carb() {
     y1 = append(y1, sin(by));
     ellipse(x1[i]*100, y1[i]*100, 2, 2);
     stroke(i, 100, 100);
+    if(mouseIsPressed){
+      stroke(0, 100, 0);
+    }
     if (i>0)line(x1[i]*100, y1[i]*100, x1[i-1]*100, y1[i-1]*100);
   }
   pop();
