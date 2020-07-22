@@ -1,5 +1,5 @@
 ﻿@charset "utf-8";
-header, main, footer{
+body{
   min-width: 375px;
   font-family: 'TsukuARdGothic-Regular','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
 }
